@@ -1,0 +1,144 @@
+timestamp	
+Title
+	firstName
+    	middleName
+        	lastName	
+            eMail	
+            mobile
+            	company
+                	nationality
+                    	country
+                        	state	
+                            city	
+                            
+                            address
+                            	postalCode
+                                	authors
+                                    	attendes
+
+
+
+
+
+
+
+
+
+
+
+										<script>
+            const scriptURL = '<SCRIPT URL>'
+            const form = document.forms['submit-to-google-sheet']
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch('https://script.google.com/macros/s/AKfycbyJCHLW5Czgqt-x3RUu7BWRJlv2EdwFX2rnHGhYuMumTf8hGV_v/exec', { method: 'POST', body: new FormData(form) })
+                    .then(response => console.log('Success!', response))
+                    .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+    function calculate() {
+        var a = parseInt(document.getElementById('x').value);
+        if (a == 0)  {
+            alert('Number of authors cannot be zero');
+            document.getElementById('x').value = 1;
+            a=1;
+        }
+        else if(a<0)
+        {
+            document.getElementById('x').value = 1;
+            a=1;
+        }
+        
+        var b = parseInt(document.getElementById('y').value);
+        if(b<0)
+        {
+            document.getElementById('y').value = 0;
+            b=0;
+        }
+        else if (b > 5) {
+            alert("Atmost 5 non-author attendes can be registered per registration")
+            document.getElementById('y').value = 5;
+            b=5;
+        }
+        var c = a + b;
+        if (c > 0) {
+            document.getElementById('z').value = c;
+            var fees = a * 1000 + b * 750;
+            document.getElementById('regFees').value = fees;
+    }
+}
+    function calculateAttende(){
+        var a = parseInt(document.getElementById('totalMembers').value);
+        if(a == 0) {
+            alert('Number of attendes cannot be zero');
+            document.getElementById('totalMembers').value = 1;
+            a = 1;
+        }
+        if (a > 5) {
+            alert('Only 5 attendes are allowed per registration');
+            document.getElementById('totalMembers').value = 5;
+            a = 5;
+        }
+        else if(a>0)
+        {
+            var fees = a * 750;
+            document.getElementById('regFees').value = fees;
+        }
+        else{
+            document.getElementById('totalMembers').value = 1;
+            document.getElementById('regFees').value = 750;
+            a = 1;
+        }
+    }
+
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		function setCountry() {
+                    $country = $('#country option:selected').text();
+                    document.getElementById('countryHide').value = $country;
+                    }
+            function setState() {
+                    $state = $('#state option:selected').text();
+                    document.getElementById('stateHide').value = $state;
+               
+                }
+            function setCity() {
+                    $city = $('#city option:selected').text();
+                    document.getElementById('cityHide').value = $city;
+               
+                }

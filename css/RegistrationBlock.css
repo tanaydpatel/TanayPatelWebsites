@@ -1,0 +1,53 @@
+
+/*Registration Block*/
+
+.registrationPart{
+  margin: 0px 35px 10px 35px;
+  padding:0px;
+  width: 75%;
+  border: 2.5px solid #262668;  
+  border-radius: 30px;
+  text-align: center;
+  /*background-image: linear-gradient(rgb(190, 190, 190),white,white);*/
+  background-image: url("./texture-1852198_640.png");
+  background-size: cover;}
+
+/*Registration Button*/
+.registerButton {
+  background-color: rgb(89, 87, 185);
+  font-family: tpfont2;
+  font-weight: bold;
+  border: 2px solid #FFD25A;
+  border-radius: 25px;
+  
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 20px;
+  width: 35%;
+  -webkit-transition-duration: 0.3s; /* Safari */
+  transition-duration: 0.3s;
+  cursor: pointer;
+  margin-bottom: 25px;}
+.registerButton span {
+  cursor: pointer;
+  color: white;
+  font-weight: normal;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;}
+.registerButton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;}
+.registerButton:hover span {
+  padding-right: 25px;}
+.registerButton:hover span:after {
+  opacity: 1;
+  right: 0;}
+ 
+
+
+  

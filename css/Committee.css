@@ -1,0 +1,25 @@
+.committeeGrid{
+  display: grid;
+  margin: 0px 5px 0px 5px;
+  position: relative;
+  grid-template-columns:auto auto auto;
+  grid-gap: 5px;
+
+  padding: 0px 5px 0px 5px;}
+.inLeft{
+grid-column: 1;
+}
+.inRight{
+grid-column: 3;
+}
+.inCenter{
+grid-column: 2;
+}
+div{text-align: center;}
+p{text-align: center;}
+#name{
+    font-weight: bolder;
+}
+#post{
+    font-size: 13px;
+}

@@ -1,0 +1,38 @@
+@font-face{
+    font-family: tpfont1;
+    src:url('fonts/HelveticaNeue-Light.woff')format('woff');
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face{
+    font-family: tpfont2;
+    src:url('fonts/LucidaGrande.woff')format('woff');
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face{
+    font-family: tpfont3;
+    src:url("fonts/Sofia-Regular.woff");
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face{
+    font-family: tpfont4;
+    src:url("fonts/Stella.woff");
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face{
+    font-family: tpfont5;
+    src:url("fonts/fontawesome-webfont.woff");
+    font-weight: normal;
+    font-size: normal;
+}
+
+
+
+    
